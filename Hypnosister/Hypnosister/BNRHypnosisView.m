@@ -48,9 +48,28 @@
     [[UIColor lightGrayColor] setStroke];   
     
     [path stroke];
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(currentContext);
+    CGContextSetShadow(currentContext, CGSizeMake(4,7), 3);
     
     UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
     [logoImage drawInRect:CGRectMake(bounds.origin.x+44, bounds.origin.y+44, bounds.size.width-88, bounds.size.height-88)];
+
+    CGContextRestoreGState(currentContext);
+    
+    CGContextSaveGState(currentContext);
+    [path addClip];
+    CGFloat locations[2] = { 0.0 , 1.0 };
+    CGFloat components[8] = { 0.0, 1.0, 0.0, 1.0,
+                              1.0, 1.0, 0.0, 1.0 };
+    
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorspace, components, locations, 2);
+    
+    CGContextDrawLinearGradient(currentContext, gradient, CGPointMake(bounds.size.width/2,100), CGPointMake(bounds.size.width/2,bounds.size.height-100), 0);
+    CGContextRestoreGState(currentContext);
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorspace);
 }
 
 @end
