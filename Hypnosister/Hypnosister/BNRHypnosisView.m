@@ -60,14 +60,6 @@
     [self.circleColor setStroke];
     
     [path stroke];
-    CGContextRef currentContext = UIGraphicsGetCurrentContext();
-    CGContextSaveGState(currentContext);
-    CGContextSetShadow(currentContext, CGSizeMake(4,7), 3);
-    
-    UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
-    [logoImage drawInRect:CGRectMake(bounds.origin.x+44, bounds.origin.y+44, bounds.size.width-88, bounds.size.height-88)];
-
-    CGContextRestoreGState(currentContext);
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
