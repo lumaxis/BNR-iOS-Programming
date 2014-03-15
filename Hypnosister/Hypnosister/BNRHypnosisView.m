@@ -8,13 +8,25 @@
 
 #import "BNRHypnosisView.h"
 
+@interface BNRHypnosisView ()
+
+@property (strong, nonatomic) UIColor *circleColor;
+
+@end
+
 @implementation BNRHypnosisView
+
+- (void)setCircleColor:(UIColor *)circleColor {
+    _circleColor = circleColor;
+    [self setNeedsDisplay];
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
+        self.circleColor = [UIColor lightGrayColor];
     }
     return self;
 }
@@ -45,7 +57,7 @@
     }
     path.lineWidth = 10;
     
-    [[UIColor lightGrayColor] setStroke];   
+    [self.circleColor setStroke];
     
     [path stroke];
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
@@ -56,20 +68,19 @@
     [logoImage drawInRect:CGRectMake(bounds.origin.x+44, bounds.origin.y+44, bounds.size.width-88, bounds.size.height-88)];
 
     CGContextRestoreGState(currentContext);
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    NSLog(@"%@ was touched", self);
     
-    CGContextSaveGState(currentContext);
-    [path addClip];
-    CGFloat locations[2] = { 0.0 , 1.0 };
-    CGFloat components[8] = { 0.0, 1.0, 0.0, 1.0,
-                              1.0, 1.0, 0.0, 1.0 };
+    // Get 3 random numbers between 0 and 1
+    float red = (arc4random() % 100) / 100.0;
+    float green = (arc4random() % 100) / 100.0;
+    float blue = (arc4random() % 100) / 100.0;
     
-    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
-    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorspace, components, locations, 2);
+    UIColor *randomColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
     
-    CGContextDrawLinearGradient(currentContext, gradient, CGPointMake(bounds.size.width/2,100), CGPointMake(bounds.size.width/2,bounds.size.height-100), 0);
-    CGContextRestoreGState(currentContext);
-    CGGradientRelease(gradient);
-    CGColorSpaceRelease(colorspace);
+    self.circleColor = randomColor;
 }
 
 @end
