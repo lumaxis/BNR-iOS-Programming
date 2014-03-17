@@ -23,6 +23,13 @@
 		804BB2F918D64B250060E1DD /* BNRHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 804BB2F818D64B250060E1DD /* BNRHypnosisViewController.m */; };
 		804BB2FC18D6523F0060E1DD /* BNRReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 804BB2FB18D6523F0060E1DD /* BNRReminderViewController.m */; };
 		804BB2FE18D65A110060E1DD /* BNRReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804BB2FD18D65A110060E1DD /* BNRReminderViewController.xib */; };
+		80AC98D918D74A0100C3B7AF /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AC98D818D74A0100C3B7AF /* CoreText.framework */; };
+		80AC98DB18D74A0900C3B7AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AC98DA18D74A0900C3B7AF /* QuartzCore.framework */; };
+		80AC98DD18D74A1200C3B7AF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AC98DC18D74A1200C3B7AF /* Security.framework */; };
+		80AC98DF18D74A2600C3B7AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AC98DE18D74A2600C3B7AF /* SystemConfiguration.framework */; };
+		80AC98E518D74A4000C3B7AF /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AC98E118D74A4000C3B7AF /* HockeySDK.framework */; };
+		80AC98E618D74A4000C3B7AF /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 80AC98E318D74A4000C3B7AF /* HockeySDK.xcconfig */; };
+		80AC98E718D74A4000C3B7AF /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80AC98E418D74A4000C3B7AF /* HockeySDKResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		804BB2FA18D6523F0060E1DD /* BNRReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRReminderViewController.h; sourceTree = "<group>"; };
 		804BB2FB18D6523F0060E1DD /* BNRReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRReminderViewController.m; sourceTree = "<group>"; };
 		804BB2FD18D65A110060E1DD /* BNRReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRReminderViewController.xib; sourceTree = "<group>"; };
+		80AC98D818D74A0100C3B7AF /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		80AC98DA18D74A0900C3B7AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		80AC98DC18D74A1200C3B7AF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		80AC98DE18D74A2600C3B7AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		80AC98E118D74A4000C3B7AF /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		80AC98E318D74A4000C3B7AF /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
+		80AC98E418D74A4000C3B7AF /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80AC98DF18D74A2600C3B7AF /* SystemConfiguration.framework in Frameworks */,
+				80AC98DD18D74A1200C3B7AF /* Security.framework in Frameworks */,
+				80AC98DB18D74A0900C3B7AF /* QuartzCore.framework in Frameworks */,
+				80AC98D918D74A0100C3B7AF /* CoreText.framework in Frameworks */,
+				80AC98E518D74A4000C3B7AF /* HockeySDK.framework in Frameworks */,
 				804BB2C518D64A7E0060E1DD /* CoreGraphics.framework in Frameworks */,
 				804BB2C718D64A7E0060E1DD /* UIKit.framework in Frameworks */,
 				804BB2C318D64A7E0060E1DD /* Foundation.framework in Frameworks */,
@@ -107,6 +126,11 @@
 		804BB2C118D64A7E0060E1DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80AC98E018D74A4000C3B7AF /* HockeySDK.embeddedframework */,
+				80AC98DE18D74A2600C3B7AF /* SystemConfiguration.framework */,
+				80AC98DC18D74A1200C3B7AF /* Security.framework */,
+				80AC98DA18D74A0900C3B7AF /* QuartzCore.framework */,
+				80AC98D818D74A0100C3B7AF /* CoreText.framework */,
 				804BB2C218D64A7E0060E1DD /* Foundation.framework */,
 				804BB2C418D64A7E0060E1DD /* CoreGraphics.framework */,
 				804BB2C618D64A7E0060E1DD /* UIKit.framework */,
@@ -162,6 +186,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		80AC98E018D74A4000C3B7AF /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				80AC98E118D74A4000C3B7AF /* HockeySDK.framework */,
+				80AC98E218D74A4000C3B7AF /* Resources */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = "<group>";
+		};
+		80AC98E218D74A4000C3B7AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80AC98E318D74A4000C3B7AF /* HockeySDK.xcconfig */,
+				80AC98E418D74A4000C3B7AF /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,6 +215,7 @@
 				804BB2BB18D64A7E0060E1DD /* Sources */,
 				804BB2BC18D64A7E0060E1DD /* Frameworks */,
 				804BB2BD18D64A7E0060E1DD /* Resources */,
+				80AC98D718D749C200C3B7AF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -240,6 +284,8 @@
 			files = (
 				804BB2FE18D65A110060E1DD /* BNRReminderViewController.xib in Resources */,
 				804BB2CD18D64A7E0060E1DD /* InfoPlist.strings in Resources */,
+				80AC98E718D74A4000C3B7AF /* HockeySDKResources.bundle in Resources */,
+				80AC98E618D74A4000C3B7AF /* HockeySDK.xcconfig in Resources */,
 				804BB2D518D64A7F0060E1DD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +299,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80AC98D718D749C200C3B7AF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		804BB2BB18D64A7E0060E1DD /* Sources */ = {
@@ -380,6 +442,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HypnoNerd/HypnoNerd-Prefix.pch";
 				INFOPLIST_FILE = "HypnoNerd/HypnoNerd-Info.plist";
@@ -393,6 +459,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HypnoNerd/HypnoNerd-Prefix.pch";
 				INFOPLIST_FILE = "HypnoNerd/HypnoNerd-Info.plist";
@@ -460,6 +530,7 @@
 				804BB2ED18D64A7F0060E1DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		804BB2EE18D64A7F0060E1DD /* Build configuration list for PBXNativeTarget "HypnoNerdTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +539,7 @@
 				804BB2F018D64A7F0060E1DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
