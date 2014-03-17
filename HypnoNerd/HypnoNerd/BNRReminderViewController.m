@@ -28,6 +28,18 @@
     return self;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSLog(@"BNRReminderViewController loaded its view.");
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:60];
+}
+
 - (IBAction)addReminder:(id)sender {
     NSDate *date = self.datePicker.date;
     NSLog(@"Setting a reminder for %@", date);
