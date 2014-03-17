@@ -36,6 +36,8 @@
     
     // Set it as *the* view of this view controller
     self.view = backgroundView;
+    
+    UISegmentedControl *segCtrl = [[UISegmentedControl alloc] initWithItems:@[@"Red",@"Green",@"Blue"]];
 }
 
 @end
