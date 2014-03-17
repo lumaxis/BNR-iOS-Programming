@@ -30,6 +30,8 @@
 		80AC98E518D74A4000C3B7AF /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AC98E118D74A4000C3B7AF /* HockeySDK.framework */; };
 		80AC98E618D74A4000C3B7AF /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 80AC98E318D74A4000C3B7AF /* HockeySDK.xcconfig */; };
 		80AC98E718D74A4000C3B7AF /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80AC98E418D74A4000C3B7AF /* HockeySDKResources.bundle */; };
+		80AC98EB18D7562200C3B7AF /* BNRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC98E918D7562200C3B7AF /* BNRQuizViewController.m */; };
+		80AC98EC18D7562200C3B7AF /* BNRQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AC98EA18D7562200C3B7AF /* BNRQuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,9 @@
 		80AC98E118D74A4000C3B7AF /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		80AC98E318D74A4000C3B7AF /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
 		80AC98E418D74A4000C3B7AF /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		80AC98E818D7562200C3B7AF /* BNRQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRQuizViewController.h; sourceTree = "<group>"; };
+		80AC98E918D7562200C3B7AF /* BNRQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRQuizViewController.m; sourceTree = "<group>"; };
+		80AC98EA18D7562200C3B7AF /* BNRQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRQuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +156,9 @@
 				804BB2F818D64B250060E1DD /* BNRHypnosisViewController.m */,
 				804BB2F118D64AD30060E1DD /* BNRHypnosisView.h */,
 				804BB2F218D64AD30060E1DD /* BNRHypnosisView.m */,
+				80AC98E818D7562200C3B7AF /* BNRQuizViewController.h */,
+				80AC98E918D7562200C3B7AF /* BNRQuizViewController.m */,
+				80AC98EA18D7562200C3B7AF /* BNRQuizViewController.xib */,
 				804BB2D418D64A7F0060E1DD /* Images.xcassets */,
 				804BB2C918D64A7E0060E1DD /* Supporting Files */,
 			);
@@ -286,6 +294,7 @@
 				804BB2CD18D64A7E0060E1DD /* InfoPlist.strings in Resources */,
 				80AC98E718D74A4000C3B7AF /* HockeySDKResources.bundle in Resources */,
 				80AC98E618D74A4000C3B7AF /* HockeySDK.xcconfig in Resources */,
+				80AC98EC18D7562200C3B7AF /* BNRQuizViewController.xib in Resources */,
 				804BB2D518D64A7F0060E1DD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +332,7 @@
 			files = (
 				804BB2CF18D64A7E0060E1DD /* main.m in Sources */,
 				804BB2D318D64A7E0060E1DD /* BNRAppDelegate.m in Sources */,
+				80AC98EB18D7562200C3B7AF /* BNRQuizViewController.m in Sources */,
 				804BB2F318D64AD30060E1DD /* BNRHypnosisView.m in Sources */,
 				804BB2FC18D6523F0060E1DD /* BNRReminderViewController.m in Sources */,
 				804BB2F918D64B250060E1DD /* BNRHypnosisViewController.m in Sources */,

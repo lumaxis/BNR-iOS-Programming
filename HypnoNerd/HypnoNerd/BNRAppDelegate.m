@@ -9,6 +9,7 @@
 #import "BNRAppDelegate.h"
 #import "BNRHypnosisViewController.h"
 #import "BNRReminderViewController.h"
+#import "BNRQuizViewController.h"
 #import <HockeySDK/HockeySDK.h>
 
 
@@ -28,8 +29,10 @@
     
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
     
+    BNRQuizViewController *qvc = [[BNRQuizViewController alloc]init];
+    
     UITabBarController *tbc = [[UITabBarController alloc]init];
-    tbc.viewControllers = @[hvc,rvc];
+    tbc.viewControllers = @[hvc,rvc,qvc];
     
     self.window.rootViewController = tbc;
     
